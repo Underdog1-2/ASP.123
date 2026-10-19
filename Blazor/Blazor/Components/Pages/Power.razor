@@ -1,0 +1,18 @@
+﻿@page "/Power"
+@rendermode InteractiveServer
+@using System.Numerics;
+
+<hr />
+<h3>Power</h3>
+<div class="power">
+	<input type="number" @bind="number" @bind:after="Calculate" />
+	<h3>@number<sup>@power</sup> = @result</h3>
+	<input type="number" @bind="power" @bind:after="Calculate" />
+</div>
+<hr />
+
+@* Код компонента вынесен в отдельный partial-файл Power.razor.cs *@
+@code
+{
+
+}
