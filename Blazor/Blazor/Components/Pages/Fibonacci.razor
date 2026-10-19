@@ -1,0 +1,17 @@
+﻿@page "/Fibonacci"
+@rendermode InteractiveServer
+
+<h3>Fibonacci</h3>
+
+<input type="number" @bind="n" @bind:after="Calculate" />
+
+@foreach (int i in row)
+{
+	<div>@i</div>
+}
+
+@* Код компонента вынесен в отдельный partial-файл Fibonacci.razor.cs *@
+@code
+{
+
+}
